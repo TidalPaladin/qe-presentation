@@ -9,9 +9,9 @@
 \usetheme{CambridgeUS}
 
 
-\title{Unsupervised Pretraining of Foundation Models for Medical Imaging}
+\title[Foundation Models]{Unsupervised Pretraining of Foundation Models for Medical Imaging}
 \author{Scott Chase Waggener}
-\date{\today}
+\date{October 24, 2023}
 
 \begin{document}
 
@@ -62,9 +62,20 @@
             \item MLO and CC views are approximately orthogonal
         \end{itemize}
    \end{itemize}
+\end{frame}
+\begin{frame}
    \begin{figure}
        \centering
-       \includegraphics[width=0.5\textwidth]{placeholder.jpg}
+       \begin{minipage}{0.45\textwidth}
+           \centering
+           \includegraphics[width=\textwidth]{lmlo.png}
+           \caption{MLO View}
+       \end{minipage}\hfill
+       \begin{minipage}{0.45\textwidth}
+           \centering
+           \includegraphics[width=\textwidth]{lcc.png}
+           \caption{CC View}
+       \end{minipage}
    \end{figure}
 \end{frame}
 
@@ -75,9 +86,20 @@
         \item Reference images are used (when available) to compare to the standard views
         \item Sometimes lesions will appear in multiple views
    \end{itemize}
+\end{frame}
+\begin{frame}
    \begin{figure}
        \centering
-       \includegraphics[width=0.5\textwidth]{placeholder.jpg}
+       \begin{minipage}{0.45\textwidth}
+           \centering
+           \includegraphics[width=\textwidth]{rmlo.png}
+           \caption{Lesion (MLO View)}
+       \end{minipage}\hfill
+       \begin{minipage}{0.45\textwidth}
+           \centering
+           \includegraphics[width=\textwidth]{rcc.png}
+           \caption{Lesion (CC View)}
+       \end{minipage}
    \end{figure}
 \end{frame}
 
